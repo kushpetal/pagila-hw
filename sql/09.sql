@@ -7,3 +7,4 @@ FROM staff
 JOIN payment ON payment.staff_id = staff.staff_id
 WHERE payment.payment_date >= '2020-01-01' AND payment.payment_date < '2020-02-01'
 GROUP BY staff.staff_id
+ORDER BY sum ASC
